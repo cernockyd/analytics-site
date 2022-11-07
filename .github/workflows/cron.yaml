@@ -1,0 +1,13 @@
+name: daily-cron
+on:
+  schedule:
+    - cron: '0 1 * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call API route to update books_readers_by_year materialized view.
+        run: |
+          curl --request POST \
+          --url 'https://analytics.next-book.info/api/refresh-books-readers-list' \
+          --header 'Authorization: Bearer ${{ secrets.API_SECRET_KEY }}'

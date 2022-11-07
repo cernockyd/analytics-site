@@ -1,0 +1,55 @@
+The following is a list of sources from which code was used/modified in this codebase.
+
+-------------------------------------------------------------------------------
+The Initial Developer of some parts of the repository, which are copied from, derived from, or
+inspired by Tremor (https://github.com/tremorlabs/tremor) published under Apache License 2.0 
+(https://github.com/tremorlabs/tremor/blob/main/License), is Tremor Labs (https://tremor.so/).
+The parts include namely visualisation components and their logic: area-chart, chart-tooltip, 
+bar-list, metric-button, bar-list-card, date-range-picker.
+Copyright 2022 Tremor. All Rights Reserved.
+
+This codebase contains a portion of code from tremor which can be obtained at:
+
+tremor:
+- https://github.com/tremorlabs/tremor
+
+date-range-picker:
+- https://github.com/tremorlabs/tremor/blob/main/src/components/input-elements/Datepicker/Datepicker.tsx
+
+area-chart:
+- https://github.com/tremorlabs/tremor/blob/main/src/components/chart-elements/AreaChart/AreaChart.tsx
+
+bar-list, bar-list-card:
+- https://github.com/tremorlabs/tremor/blob/main/src/components/vis-elements/BarList/BarList.tsx
+
+metric
+- https://github.com/tremorlabs/tremor/tree/main/src/components/text-elements/Metric  
+
+-------------------------------------------------------------------------------
+The Initial Developer of some parts of the repository, which are copied from, derived from, or
+inspired by react-aria docs and examples published under Apache License 2.0 
+(https://github.com/adobe/react-spectrum/blob/main/LICENSE), is Adobe, Inc. (https://www.adobe.com/). 
+The parts include namely visualisation interactive components and their logic: date-range-picker, select.
+Copyright 2022 Adobe. All Rights Reserved.
+
+This codebase contains a portion of code from react spectrum packages which can be obtained at:
+
+react-spectrum:
+- https://github.com/adobe/react-spectrum 
+
+react-aria:
+- https://react-spectrum.adobe.com/react-aria/index.html
+
+react-stately:
+- https://react-spectrum.adobe.com/react-stately/index.html 
+
+internationalized:
+- https://react-spectrum.adobe.com/internationalized/index.html
+
+date-range-picker:
+- https://react-spectrum.adobe.com/react-aria/useDateRangePicker.html 
+- https://codesandbox.io/s/reverent-faraday-5nwk87?file=/src/DateRangePicker.js
+
+select:
+- https://react-spectrum.adobe.com/react-aria/useSelect.html
+- https://codesandbox.io/s/hardcore-moon-xzc4r?file=/src/ComboBox.tsx
