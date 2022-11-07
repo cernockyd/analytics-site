@@ -27,10 +27,10 @@ export async function getBooksReadersList(
       domain,
       readers
     from books_readers_by_year
-    order by readers desc
+    order by readers desc, domain asc
     limit $1 offset $2 
   `,
-    [pageSize, page]
+    [pageSize, (page - 1) * pageSize]
   );
   return rows.map((x) => ({
     slug: x.domain.split('books-are-next.github.io/')[1],
