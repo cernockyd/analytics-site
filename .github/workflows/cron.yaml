@@ -9,5 +9,5 @@ jobs:
       - name: Call API route to update books_readers_by_year materialized view.
         run: |
           curl --request POST \
-          --url 'https://analytics-dashboard-steel.vercel.app/api/refresh-books-readers-list' \
+          --url 'https://next-book-analytics.vercel.app/api/refresh-books-readers-list' \
           --header 'Authorization: Bearer ${{ secrets.API_SECRET_KEY }}'
