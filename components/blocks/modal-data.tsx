@@ -51,10 +51,10 @@ export default function ModalData(props: ModalDataProps) {
 
   return (
     <div
-      className="fixed inset-0 flex flex-col bg-gray-50 z-10"
+      className="fixed inset-0 overflow-auto flex flex-col bg-gray-50 z-10"
       {...underlayProps}
     >
-      <div className="px-6 pb-6 pt-8 sm:px-10 sm:pb-5 w-full max-w-7xl mx-auto sm:px-8">
+      <div className="px-6 pb-8 pt-8 sm:px-10 w-full max-w-7xl mx-auto sm:px-8">
         <FocusScope contain restoreFocus autoFocus>
           <div {...overlayProps} {...dialogProps} {...modalProps} ref={ref}>
             <Card className="p-6">
