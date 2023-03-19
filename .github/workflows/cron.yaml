@@ -6,7 +6,7 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Call API route to update books_readers_by_year materialized view.
+      - name: Call API route to update books_readers materialized view.
         run: |
           curl --request POST \
           --url 'https://next-book-analytics.vercel.app/api/refresh-books-readers-list' \
