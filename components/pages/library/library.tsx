@@ -25,6 +25,7 @@ export default function Home({
 }: Props) {
   const [dateInterval, setDateInterval] =
     useState<DateInterval>(defaultDateInterval);
+  console.log('dateInterval', dateInterval);
   return (
     <BookListDataContext.Provider
       value={{

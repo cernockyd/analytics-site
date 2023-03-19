@@ -16,7 +16,8 @@ export type BooksReadersItem = ResultRow;
 export type BooksReadersList = ResultRow[];
 
 export async function getBooksReadersList(
-  filter: ServerFilterData,
+  // the filter data is currently ignored, but it's here for future use
+  _filter: ServerFilterData,
   page: number,
   pageSize: number
 ): Promise<BooksReadersList> {
@@ -26,7 +27,7 @@ export async function getBooksReadersList(
       slug,
       domain,
       readers
-    from books_readers_by_year
+    from books_readers
     order by readers desc, domain asc
     limit $1 offset $2 
   `,
